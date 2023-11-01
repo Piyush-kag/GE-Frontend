@@ -1,0 +1,149 @@
+/* Apply styles to the header and h1 */
+.App-header {
+  background-color: #333; /* Background color for the header */
+  padding: 10px; /* Adjust as needed */
+  display: flex; /* Make the header a flex container */
+  align-items: center; /* Center content vertically */
+}
+
+h1.logo {
+  margin: 0; /* Remove default margin */
+  font-size: 32px; /* Adjust the font size as needed */
+  color: #fff; /* Text color for the logo */
+  margin-right: auto; /* Push the logo to the left by aligning it to the right end of the container */
+}
+
+/* Apply gradient animation to the text within the span */
+.gradient-text {
+  background-image: linear-gradient(45deg, #ff9900, #ff3366, #cc33ff, #0099ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: moveGradient 10s linear infinite;
+}
+
+.ticket-bg{
+  background-color: #a4da8f;
+  color: #fff;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+/* Weekly Planner CSS */
+.weekly-view {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  display: inline-block;
+}
+
+
+.custom-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 90%;
+  padding: 20px;
+}
+
+.custom-modal .modal-content {
+  border: none;
+  box-shadow: none;
+}
+
+.custom-modal .modal-header {
+  border: none;
+}
+
+.custom-modal .modal-footer {
+  border: none;
+}
+
+.custom-modal .btn-secondary {
+  background: #ddd;
+  color: #333;
+}
+
+.custom-modal .btn-primary {
+  background: #007bff;
+  color: #fff;
+}
+
+.card-container {
+  transition: transform 0.2s ease;
+  box-shadow: -5px 0 50px rgba(0, 0, 0, 0.5); /* Negative horizontal offset for left shadow */
+}
+
+
+.card-container:hover {
+  transform: scale(1.1); /* Increase the size by 10% on hover */
+  /* color */
+}
+
+/* Apply the same effect to the button inside the card */
+.card-container:hover .btn-zoom {
+  transform: scale(1);
+}
+
+/* Restyle the button on hover if needed */
+.card-container:hover .btn-zoom:hover {
+  background-color: #333; /* Change background color on button hover */
+  color: #fff; /* Change text color on button hover */
+  border-color: #333; /* Change border color on button hover */
+}
+
+.CalendarPage {
+  display: flex;
+}
+
+.Sidebar {
+  flex: 0.4; /* Adjust the value to control the width of the sidebar */
+  padding: 10px;
+  background-image: linear-gradient(to bottom right,#13186a,#0037a2,#8885fe)!important;  color: #fff;
+}
+
+.Calendar {
+  flex: 2; /* Adjust the value to control the width of the calendar */
+}
+
+.calendar-container {
+  background-color: #ffffff;
+  border: 1px solid #3e20c5;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.UserCard button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-top: 11px;
+}
+
+.UserCard button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.Btn-ticket{
+  margin-bottom: 50px;
+}
